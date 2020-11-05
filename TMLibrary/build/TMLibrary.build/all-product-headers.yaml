@@ -1,0 +1,68 @@
+{
+  'version': 0,
+  'case-sensitive': 'false',
+  'roots': [
+    {
+      'type': 'directory',
+      'name': "/Volumes/MAC2/Mini_Fct/Xavier_DUT/TMLibrary/build/Debug/TMLibrary.framework/Headers",
+      'contents': [
+        {
+          'type': 'file',
+          'name': "ContextKey.h",
+          'external-contents': "/Volumes/MAC2/Mini_Fct/Xavier_DUT/TMLibrary/TMLibrary/ContextKey.h"
+        },
+        {
+          'type': 'file',
+          'name': "MessageInterface.h",
+          'external-contents': "/Volumes/MAC2/Mini_Fct/Xavier_DUT/TMLibrary/TMLibrary/MessageInterface.h"
+        },
+        {
+          'type': 'file',
+          'name': "PathManager.h",
+          'external-contents': "/Volumes/MAC2/Mini_Fct/Xavier_DUT/TMLibrary/TMLibrary/PathManager.h"
+        },
+        {
+          'type': 'file',
+          'name': "RegexKitLite.h",
+          'external-contents': "/Volumes/MAC2/Mini_Fct/Xavier_DUT/TMLibrary/TMLibrary/RegxKitLite/RegexKitLite.h"
+        },
+        {
+          'type': 'file',
+          'name': "TMLibrary-Swift.h",
+          'external-contents': "/Volumes/MAC2/Mini_Fct/Xavier_DUT/TMLibrary/build/Debug/TMLibrary.framework/Versions/A/Headers/TMLibrary-Swift.h"
+        },
+        {
+          'type': 'file',
+          'name': "TMLibrary.h",
+          'external-contents': "/Volumes/MAC2/Mini_Fct/Xavier_DUT/TMLibrary/TMLibrary/TMLibrary.h"
+        },
+        {
+          'type': 'file',
+          'name': "ZMQinterface.h",
+          'external-contents': "/Volumes/MAC2/Mini_Fct/Xavier_DUT/TMLibrary/TMLibrary/ZMQinterface.h"
+        },
+        {
+          'type': 'file',
+          'name': "portdef.h",
+          'external-contents': "/Volumes/MAC2/Mini_Fct/Xavier_DUT/TMLibrary/TMLibrary/portdef.h"
+        },
+        {
+          'type': 'file',
+          'name': "sysdef.h",
+          'external-contents': "/Volumes/MAC2/Mini_Fct/Xavier_DUT/TMLibrary/TMLibrary/sysdef.h"
+        }
+      ]
+    },
+    {
+      'type': 'directory',
+      'name': "/Volumes/MAC2/Mini_Fct/Xavier_DUT/TMLibrary/build/Debug/TMLibrary.framework/Modules",
+      'contents': [
+        {
+          'type': 'file',
+          'name': "module.modulemap",
+          'external-contents': "/Volumes/MAC2/Mini_Fct/Xavier_DUT/TMLibrary/build/TMLibrary.build/Debug/TMLibrary.build/module.modulemap"
+        }
+      ]
+    }
+  ]
+}

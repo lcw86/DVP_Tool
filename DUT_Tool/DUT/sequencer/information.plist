@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>title</key>
+	<string>Warning</string>
+	<key>info</key>
+	<string>USB_SOC connect to Mac Mini</string>
+	<key>eload1Mes</key>
+	<string>If the eload 1 set &gt;2000mA and  more than one minute, it will shut down automatically to avoid damaging the fixture board</string>
+	<key>eload2Mes</key>
+	<string>If the eload 2 set &gt;2000mA and  more than one minute, it will shut down automatically to avoid damaging the fixture board</string>
+	<key>LDCM_Desc</key>
+	<string>Process:
+1. Enter Diags with OneButtonEnterDiags/Mobile Restore.
+2. Load Diags Roots via usbfs -f/ usbfs-e
+3. Connect LDCM load in GUI
+4. Run Diags Commands /Smokey in Diags CLI and View Logs in Console, in the Main DVP Tools GU
+</string>
+	<key>Penrose_Desc</key>
+	<string>Process:
+1. Enter Diags with OneButtonEnterDiags/Mobile Restore.
+2. Set ZYNQ_LED_PWM frequency &amp; duty cycle value to enable Green/IR LED
+3, Connect IR/VIS Vout switch
+4. Run Diags Commands /Smokey in Diags CLI and View Logs in Console, in the Main DVP Tools GUI
+        camisp —find,
+        Audio -r,routeaudio -b socpdm -i ap-dec0 -o ap-pdm -r,routeaudio -b socpdm -i ap-dec1 -o ap-pdm -r,
+        audioparam -b socpdm -p ap-dec0 -s -n mic-input -v 6,audioparam -b socpdm -p ap-dec1 -s -n mic-input -v 6,
+        recordaudio -b socpdm -p ap-pdm --len 1000 --rate 16000 -c 2
+5. Run Diags Commands /Smokey in Diags CLI and View Logs in Console, in the Main DVP Tools GUI
+        processaudio -p fft -o &quot;--minHz 50 --maxHz 8000 --peakBinWidth 4 --numTones 7 --windowNorm true --sortOrder 1&quot; -i record0</string>
+</dict>
+</plist>

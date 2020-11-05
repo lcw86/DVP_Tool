@@ -1,0 +1,22 @@
+[sendcmd] [123]dac set(a,4200)
+
+[sendcmd] [123]io set(1,bit388=1)
+
+[sendcmd] [123]io set(3,bit118=0,bit117=1,bit116=1)
+
+
+delay 5s;
+[sendcmd] [123]io set(3,bit118=0,bit117=0,bit116=0)
+
+Diags
+
+
+
+[123]change tx source voltage(1,5000,3500,PP_HVE);
+[123]io set(1,bit388=1);
+[123]dac set(a,4200);
+[123]io set(4,bit33=0,bit26=1,bit104=0,bit103=1);
+[123]io set(5,bit64=1,bit66=0,bit55=0,bit65=0,bit54=0);
+delay 0.01;
+[123]io set(2,bit386=1,bit63=1);
+[123]dac set(d,944)

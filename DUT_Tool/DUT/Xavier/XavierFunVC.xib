@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.Cocoa.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="MacOSX.Cocoa" propertyAccessControl="none">
+    <dependencies>
+        <deployment identifier="macosx"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.CocoaPlugin" version="14460.31"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <customObject id="-2" userLabel="File's Owner" customClass="XavierFunVC">
+            <connections>
+                <outlet property="tabFuncBar" destination="uj6-tF-9MV" id="bSw-Pe-V8B"/>
+                <outlet property="tabFuncView" destination="0w0-Or-jwV" id="UO3-pW-0Eq"/>
+                <outlet property="view" destination="Hz6-mo-xeY" id="0bl-1N-x8E"/>
+            </connections>
+        </customObject>
+        <customObject id="-1" userLabel="First Responder" customClass="FirstResponder"/>
+        <customObject id="-3" userLabel="Application" customClass="NSObject"/>
+        <customView appearanceType="aqua" id="Hz6-mo-xeY">
+            <rect key="frame" x="0.0" y="0.0" width="1200" height="700"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+            <subviews>
+                <customView hidden="YES" id="uj6-tF-9MV" userLabel="Tab Bar" customClass="MMTabBarView">
+                    <rect key="frame" x="0.0" y="675" width="1200" height="24"/>
+                    <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES"/>
+                    <connections>
+                        <outlet property="partnerView" destination="Hz6-mo-xeY" id="Jg5-Vf-fxJ"/>
+                        <outlet property="tabView" destination="0w0-Or-jwV" id="75b-kG-RDq"/>
+                    </connections>
+                </customView>
+                <tabView type="noTabsNoBorder" id="0w0-Or-jwV">
+                    <rect key="frame" x="0.0" y="6" width="1200" height="700"/>
+                    <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                    <font key="font" metaFont="system"/>
+                    <connections>
+                        <outlet property="delegate" destination="uj6-tF-9MV" id="CJQ-FJ-y5l"/>
+                    </connections>
+                </tabView>
+            </subviews>
+            <point key="canvasLocation" x="407" y="-25"/>
+        </customView>
+    </objects>
+</document>

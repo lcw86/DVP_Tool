@@ -1,0 +1,232 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.Cocoa.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="MacOSX.Cocoa" propertyAccessControl="none" useAutolayout="YES">
+    <dependencies>
+        <deployment version="101200" identifier="macosx"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.CocoaPlugin" version="14460.31"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <customObject id="-2" userLabel="File's Owner" customClass="GT_LuaDebugPanel"/>
+        <customObject id="-1" userLabel="First Responder" customClass="FirstResponder"/>
+        <customObject id="-3" userLabel="Application" customClass="NSObject"/>
+        <customObject id="yEO-OL-YCj" customClass="ButtonGroupConfigDelegate"/>
+        <menuItem title="GT_LuaDebugPanel" id="135">
+            <modifierMask key="keyEquivalentModifierMask"/>
+            <menu key="submenu" title="GT_LuaDebugPanel" id="136">
+                <items>
+                    <menuItem title="LuaDebugPanel" id="137">
+                        <modifierMask key="keyEquivalentModifierMask"/>
+                        <connections>
+                            <action selector="menu_ShowDebugPanel:" target="145" id="156"/>
+                        </connections>
+                    </menuItem>
+                    <menuItem title="LuaScriptPanel" id="YeQ-lk-ecq">
+                        <modifierMask key="keyEquivalentModifierMask"/>
+                        <connections>
+                            <action selector="menu_ShowLuaScriptsPanel:" target="145" id="VOU-jh-xAO"/>
+                        </connections>
+                    </menuItem>
+                </items>
+            </menu>
+        </menuItem>
+        <customObject id="T8x-Hc-1dh" customClass="GraphicWinDelegate">
+            <connections>
+                <outlet property="tab" destination="WHe-sa-nxK" id="EdT-4B-Yeq"/>
+                <outlet property="window" destination="GY0-Sk-iDq" id="oqT-4e-IJd"/>
+            </connections>
+        </customObject>
+        <customObject id="rrT-zQ-JcO" customClass="LuaDirectoryTree"/>
+        <customObject id="145" customClass="LuaDebugPanelDebugWinDelegate">
+            <connections>
+                <outlet property="btChooseMode" destination="aW1-K3-d59" id="pHx-oj-eIJ"/>
+                <outlet property="btSwith" destination="BON-hH-mtw" id="R0E-Qb-aNh"/>
+                <outlet property="groupSelectable" destination="0m3-XP-vSY" id="Vdv-7q-2o3"/>
+                <outlet property="mWinDebugPanel" destination="GY0-Sk-iDq" id="kMl-WG-IDb"/>
+                <outlet property="menuItem" destination="135" id="147"/>
+                <outlet property="swith" destination="GLX-TU-UCa" id="wvx-fr-lef"/>
+            </connections>
+        </customObject>
+        <customObject id="xWH-O0-prS" userLabel="Lua Instrument object" customClass="LuaInstrumentWinDelegate"/>
+        <menu title="Menu" autoenablesItems="NO" id="5I7-Yg-z55" userLabel="OutlineContextMenu">
+            <items>
+                <menuItem title="Delete Selection" keyEquivalent="1" id="peg-zO-GPa">
+                    <connections>
+                        <action selector="deleteSelections:" target="rrT-zQ-JcO" id="qa5-Ze-lOd"/>
+                    </connections>
+                </menuItem>
+                <menuItem title="New Lua" keyEquivalent="2" id="ZbK-Bi-PCp">
+                    <connections>
+                        <action selector="addLeaf:" target="rrT-zQ-JcO" id="wPB-ug-Uxf"/>
+                    </connections>
+                </menuItem>
+                <menuItem title="New Container" keyEquivalent="3" id="3kt-UU-EYH">
+                    <connections>
+                        <action selector="addContainer:" target="rrT-zQ-JcO" id="by4-xb-sFf"/>
+                    </connections>
+                </menuItem>
+            </items>
+            <point key="canvasLocation" x="117" y="194"/>
+        </menu>
+        <menu title="Menu" autoenablesItems="NO" id="6wA-zn-WMT" userLabel="RunChannle">
+            <items>
+                <menuItem title="Run channle" id="TI7-P6-EKW">
+                    <modifierMask key="keyEquivalentModifierMask"/>
+                    <menu key="submenu" title="Run channle" id="86h-fc-P09">
+                        <items>
+                            <menuItem title="Item" id="css-hi-wpf">
+                                <modifierMask key="keyEquivalentModifierMask"/>
+                            </menuItem>
+                        </items>
+                    </menu>
+                </menuItem>
+            </items>
+            <point key="canvasLocation" x="116" y="1390.5"/>
+        </menu>
+        <window title="STIM" allowsToolTipsWhenApplicationIsInactive="NO" autorecalculatesKeyViewLoop="NO" restorable="NO" releasedWhenClosed="NO" animationBehavior="default" id="GY0-Sk-iDq">
+            <windowStyleMask key="styleMask" titled="YES" resizable="YES"/>
+            <windowPositionMask key="initialPositionMask" leftStrut="YES" rightStrut="YES" topStrut="YES" bottomStrut="YES"/>
+            <rect key="contentRect" x="335" y="390" width="1026" height="772"/>
+            <rect key="screenRect" x="0.0" y="0.0" width="1440" height="877"/>
+            <view key="contentView" wantsLayer="YES" id="SUl-iG-5qD">
+                <rect key="frame" x="0.0" y="0.0" width="1026" height="772"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <tabView fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="WHe-sa-nxK">
+                        <rect key="frame" x="-7" y="-10" width="1041" height="747"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <font key="font" metaFont="system"/>
+                        <tabViewItems>
+                            <tabViewItem label="Tab" identifier="1" id="tWI-lL-Xov">
+                                <view key="view" ambiguous="YES" id="cWy-G3-ZIf">
+                                    <rect key="frame" x="10" y="33" width="1021" height="701"/>
+                                    <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                </view>
+                            </tabViewItem>
+                            <tabViewItem label="View" identifier="2" id="dTw-Wd-KEW">
+                                <view key="view" id="d34-uL-Ljb">
+                                    <rect key="frame" x="10" y="33" width="1021" height="701"/>
+                                    <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                </view>
+                            </tabViewItem>
+                        </tabViewItems>
+                        <connections>
+                            <outlet property="delegate" destination="T8x-Hc-1dh" id="5Jc-FN-aW8"/>
+                        </connections>
+                    </tabView>
+                    <button identifier="Refresh" hidden="YES" verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="3Zb-Gk-TVf">
+                        <rect key="frame" x="474" y="738" width="81" height="32"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                        <buttonCell key="cell" type="push" title="Refresh" bezelStyle="rounded" alignment="center" borderStyle="border" inset="2" id="9Es-ej-emx">
+                            <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
+                            <font key="font" metaFont="system"/>
+                        </buttonCell>
+                        <connections>
+                            <action selector="btDebugSw:" target="145" id="Goz-6G-ynn"/>
+                        </connections>
+                    </button>
+                    <button identifier="AllOff" verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="GLX-TU-UCa">
+                        <rect key="frame" x="611" y="739" width="101" height="32"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                        <buttonCell key="cell" type="push" title="RESET ALL" bezelStyle="rounded" alignment="center" borderStyle="border" inset="2" id="mOS-jT-Gfv">
+                            <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
+                            <font key="font" metaFont="system"/>
+                        </buttonCell>
+                        <connections>
+                            <action selector="btDebugSw:" target="145" id="rm3-N4-HZ2"/>
+                        </connections>
+                    </button>
+                    <matrix hidden="YES" verticalHuggingPriority="750" fixedFrame="YES" allowsEmptySelection="NO" autorecalculatesCellSize="YES" translatesAutoresizingMaskIntoConstraints="NO" id="aW1-K3-d59">
+                        <rect key="frame" x="148" y="734" width="246" height="18"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                        <color key="backgroundColor" red="0.0" green="0.0" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                        <size key="cellSize" width="58" height="18"/>
+                        <size key="intercellSpacing" width="6" height="3"/>
+                        <buttonCell key="prototype" type="radio" title="Radio" imagePosition="left" alignment="left" inset="2" id="9Cy-Ri-8Dr">
+                            <behavior key="behavior" changeContents="YES" doesNotDimImage="YES" lightByContents="YES"/>
+                            <font key="font" metaFont="system"/>
+                        </buttonCell>
+                        <cells>
+                            <column>
+                                <buttonCell type="radio" title="UUT1" imagePosition="left" alignment="left" inset="2" id="rzT-gF-XYH">
+                                    <behavior key="behavior" changeContents="YES" doesNotDimImage="YES" lightByContents="YES"/>
+                                    <font key="font" metaFont="system"/>
+                                </buttonCell>
+                            </column>
+                            <column>
+                                <buttonCell type="radio" title="UUT2" imagePosition="left" alignment="left" inset="2" id="IfU-Wd-lYB">
+                                    <behavior key="behavior" changeContents="YES" doesNotDimImage="YES" lightByContents="YES"/>
+                                    <font key="font" metaFont="system"/>
+                                </buttonCell>
+                            </column>
+                            <column>
+                                <buttonCell type="radio" title="UUT3" imagePosition="left" alignment="left" inset="2" id="eCr-5H-aFs">
+                                    <behavior key="behavior" changeContents="YES" doesNotDimImage="YES" lightByContents="YES"/>
+                                    <font key="font" metaFont="system"/>
+                                </buttonCell>
+                            </column>
+                            <column>
+                                <buttonCell type="radio" title="UUT4" imagePosition="left" alignment="left" inset="2" id="5QG-bY-3fB">
+                                    <behavior key="behavior" changeContents="YES" doesNotDimImage="YES" lightByContents="YES"/>
+                                    <font key="font" metaFont="system"/>
+                                </buttonCell>
+                            </column>
+                        </cells>
+                        <connections>
+                            <action selector="btChooseMode:" target="145" id="66M-ad-b3Z"/>
+                        </connections>
+                    </matrix>
+                    <button fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="BON-hH-mtw">
+                        <rect key="frame" x="844" y="746" width="90" height="18"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                        <buttonCell key="cell" type="check" title="Switch test" bezelStyle="regularSquare" imagePosition="left" inset="2" id="Fbu-Hp-aRA">
+                            <behavior key="behavior" changeContents="YES" doesNotDimImage="YES" lightByContents="YES"/>
+                            <font key="font" metaFont="system"/>
+                        </buttonCell>
+                        <connections>
+                            <action selector="btSwitch:" target="145" id="g8i-if-w9J"/>
+                        </connections>
+                    </button>
+                    <box verticalHuggingPriority="750" fixedFrame="YES" boxType="separator" translatesAutoresizingMaskIntoConstraints="NO" id="P4O-01-9tH">
+                        <rect key="frame" x="0.0" y="717" width="1295" height="146"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                    </box>
+                    <button identifier="Refresh" verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="ehd-Xz-QZB">
+                        <rect key="frame" x="0.0" y="738" width="30" height="37"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                        <buttonCell key="cell" type="square" bezelStyle="shadowlessSquare" image="closeicon" imagePosition="only" alignment="center" imageScaling="proportionallyUpOrDown" inset="2" id="NoK-TV-oY1">
+                            <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
+                            <font key="font" metaFont="system"/>
+                        </buttonCell>
+                        <connections>
+                            <action selector="showOrHideDbgMsg:" target="145" id="mXg-bt-a3a"/>
+                        </connections>
+                    </button>
+                    <imageView horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="bEO-1p-Zjz">
+                        <rect key="frame" x="947" y="738" width="79" height="37"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMinY="YES"/>
+                        <imageCell key="cell" refusesFirstResponder="YES" alignment="left" imageScaling="proportionallyDown" image="mix" id="FXK-Hr-4bs"/>
+                    </imageView>
+                    <button verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="0m3-XP-vSY">
+                        <rect key="frame" x="733" y="746" width="92" height="19"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                        <buttonCell key="cell" type="recessed" title="GroupButton" bezelStyle="recessed" alignment="center" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="o8d-GA-RgN">
+                            <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES" changeBackground="YES" changeGray="YES"/>
+                            <font key="font" metaFont="systemBold" size="12"/>
+                        </buttonCell>
+                        <connections>
+                            <action selector="btIsGroupSelectable:" target="145" id="wom-B4-QsQ"/>
+                        </connections>
+                    </button>
+                </subviews>
+            </view>
+            <connections>
+                <outlet property="delegate" destination="T8x-Hc-1dh" id="yVt-ft-mdA"/>
+            </connections>
+            <point key="canvasLocation" x="-306" y="-1160"/>
+        </window>
+    </objects>
+    <resources>
+        <image name="closeicon" width="512" height="512"/>
+        <image name="mix" width="260" height="135"/>
+    </resources>
+</document>

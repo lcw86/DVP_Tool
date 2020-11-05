@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>ACEFWDLTEST</key>
+	<string>FCT__ACE_FWDL.csv</string>
+	<key>ResetAll_TEST</key>
+	<string>FCT__ResetAll.csv</string>
+	<key>EFFICIENCYTEST</key>
+	<string>FCT__Efficiency.csv</string>
+	<key>USB3TEST</key>
+	<string>FCT__USB3.csv</string>
+	<key>EVT_TEST</key>
+	<string>FCT__OTP_Program_EVT.csv</string>
+	<key>P2_TEST</key>
+	<string>FCT__OTP_Program_P2.csv</string>
+	<key>MP_TEST</key>
+	<string></string>
+	<key>EnterDiags_TEST</key>
+	<string>FCT__EnterDiags.csv</string>
+	<key>IbootMode_TEST</key>
+	<string>FCT__IbootMode.csv</string>
+	<key>DFUMode_TEST</key>
+	<string>FCT__DFUMode.csv</string>
+	<key>PowerVbus_TEST</key>
+	<string>FCT__PowerVbus.csv</string>
+	<key>PowerVbus_5v_TEST</key>
+	<string>FCT__PowerVbus_5v.csv</string>
+	<key>PowerVbus_9v_TEST</key>
+	<string>FCT__PowerVbus_9v.csv</string>
+	<key>PowerVbus_12v_TEST</key>
+	<string>FCT__PowerVbus_12v.csv</string>
+	<key>PowerVbus_15v_TEST</key>
+	<string>FCT__PowerVbus_15v.csv</string>
+	<key>MLBIsProvider_TEST</key>
+	<string>FCT__MLB_Is_Provider.csv</string>
+	<key>MLBIsConsumer_TEST</key>
+	<string>FCT__MLB_is_Consumer.csv</string>
+	<key>DisconnectOAB_TEST</key>
+	<string>FCT__Disconnect_OAB.csv</string>
+	<key>MobileRestoreNonDiags_TEST</key>
+	<string>FCT__EnterDiags.csv</string>
+	<key>MobileRestoreEnterDFU_TEST</key>
+	<string>FCT__DFUMode.csv</string>
+	<key>MobileRestoreEnterDiags_TEST</key>
+	<string>FCT__MobileRestore_EnterDiags.csv</string>
+	<key>MobileRestoreFCT_TEST</key>
+	<string>FCT__MobileRestore.csv</string>
+	<key>LDCMVbusSet_TEST</key>
+	<string>FCT__LDCMVbusSet.csv</string>
+</dict>
+</plist>

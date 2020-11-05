@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>Request00</key>
+	<string>tcp://127.0.0.1:7600</string>
+	<key>Request01</key>
+	<string>tcp://127.0.0.1:7601</string>
+	<key>Request02</key>
+	<string>tcp://127.0.0.1:7602</string>
+	<key>Request03</key>
+	<string>tcp://127.0.0.1:7603</string>
+	<key>Subscribe00</key>
+	<string>tcp://127.0.0.1:7650</string>
+	<key>Subscribe01</key>
+	<string>tcp://127.0.0.1:7651</string>
+	<key>Subscribe02</key>
+	<string>tcp://127.0.0.1:7652</string>
+	<key>Subscribe03</key>
+	<string>tcp://127.0.0.1:7653</string>
+</dict>
+</plist>

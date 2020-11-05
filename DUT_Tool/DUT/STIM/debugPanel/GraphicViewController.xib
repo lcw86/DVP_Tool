@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.Cocoa.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="MacOSX.Cocoa" propertyAccessControl="none" useAutolayout="YES" customObjectInstantitationMethod="direct">
+    <dependencies>
+        <deployment version="101200" identifier="macosx"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.CocoaPlugin" version="14460.31"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <customObject id="-2" userLabel="File's Owner" customClass="GraphicViewController">
+            <connections>
+                <outlet property="_zoomingScrollView" destination="tfL-dI-oct" id="1Qq-SJ-oDk"/>
+                <outlet property="graphicview" destination="Z9N-pT-rwG" id="XtQ-Pb-kk9"/>
+                <outlet property="view" destination="tfL-dI-oct" id="Ajr-oP-MXB"/>
+            </connections>
+        </customObject>
+        <customObject id="-1" userLabel="First Responder" customClass="FirstResponder"/>
+        <customObject id="-3" userLabel="Application" customClass="NSObject"/>
+        <scrollView borderType="none" horizontalLineScroll="10" horizontalPageScroll="10" verticalLineScroll="10" verticalPageScroll="10" usesPredominantAxisScrolling="NO" id="tfL-dI-oct" customClass="SKTZoomingScrollView">
+            <rect key="frame" x="0.0" y="0.0" width="1004" height="1167"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <clipView key="contentView" id="1DJ-0k-ZNR">
+                <rect key="frame" x="0.0" y="0.0" width="1004" height="1167"/>
+                <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                <subviews>
+                    <customView identifier="GraphicView" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Z9N-pT-rwG" customClass="GraphicView">
+                        <rect key="frame" x="0.0" y="0.0" width="1004" height="725"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </customView>
+                </subviews>
+                <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
+            </clipView>
+            <scroller key="horizontalScroller" verticalHuggingPriority="750" horizontal="YES" id="491-i8-nWH">
+                <rect key="frame" x="0.0" y="1151" width="1004" height="16"/>
+                <autoresizingMask key="autoresizingMask"/>
+            </scroller>
+            <scroller key="verticalScroller" verticalHuggingPriority="750" doubleValue="1" horizontal="NO" id="UNT-x3-b5E">
+                <rect key="frame" x="988" y="0.0" width="16" height="1167"/>
+                <autoresizingMask key="autoresizingMask"/>
+            </scroller>
+            <point key="canvasLocation" x="139" y="375.5"/>
+        </scrollView>
+    </objects>
+</document>

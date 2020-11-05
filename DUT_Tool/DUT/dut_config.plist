@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>Request00</key>
+	<string>tcp://127.0.0.1:6800</string>
+	<key>Request01</key>
+	<string>tcp://127.0.0.1:6900</string>
+	<key>Request02</key>
+	<string>tcp://127.0.0.1:7000</string>
+	<key>Request10</key>
+	<string>tcp://127.0.0.1:6801</string>
+	<key>Request11</key>
+	<string>tcp://127.0.0.1:6901</string>
+	<key>Request12</key>
+	<string>tcp://127.0.0.1:7001</string>
+	<key>Request20</key>
+	<string>tcp://127.0.0.1:6802</string>
+	<key>Request21</key>
+	<string>tcp://127.0.0.1:6902</string>
+	<key>Request22</key>
+	<string>tcp://127.0.0.1:7002</string>
+	<key>Request30</key>
+	<string>tcp://127.0.0.1:6803</string>
+	<key>Request31</key>
+	<string>tcp://127.0.0.1:6903</string>
+	<key>Request32</key>
+	<string>tcp://127.0.0.1:7003</string>
+	<key>Subscribe00</key>
+	<string>tcp://127.0.0.1:6850</string>
+	<key>Subscribe01</key>
+	<string>tcp://127.0.0.1:6950</string>
+	<key>Subscribe02</key>
+	<string>tcp://127.0.0.1:7050</string>
+	<key>Subscribe10</key>
+	<string>tcp://127.0.0.1:6851</string>
+	<key>Subscribe11</key>
+	<string>tcp://127.0.0.1:6951</string>
+	<key>Subscribe12</key>
+	<string>tcp://127.0.0.1:7051</string>
+	<key>Subscribe20</key>
+	<string>tcp://127.0.0.1:6852</string>
+	<key>Subscribe21</key>
+	<string>tcp://127.0.0.1:6952</string>
+	<key>Subscribe22</key>
+	<string>tcp://127.0.0.1:7052</string>
+	<key>Subscribe30</key>
+	<string>tcp://127.0.0.1:6853</string>
+	<key>Subscribe31</key>
+	<string>tcp://127.0.0.1:6953</string>
+	<key>Subscribe32</key>
+	<string>tcp://127.0.0.1:7053</string>
+</dict>
+</plist>

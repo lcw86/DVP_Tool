@@ -1,0 +1,19 @@
+{
+"PowerCommands":["[123]dac set(a,4200)",
+	"[123]io set(1,bit388=1) ",
+	"[123]dac set(d,944);[123]change tx source voltage(1,5000,3500,PP_HVE);[123]io set(1,bit50=0);[123]io set(1,bit50=1)",
+	"[123]io set(6,bit386=1,bit64=1,bit55=0,bit65=0,bit54=0,bit66=0)",
+	"[123]io set(2,bit63=1,bit66=0)","[123]io set(1,bit50=1)"],
+
+"DutCommands":["\\n",
+"setenv boot-command \"diags\"",
+"setenv auto-boot \"false\"",
+"saveenv",
+"reset"],
+
+"EnterParameters":{
+"times":"1000",
+"powerAfterDelay":"0",
+"commandDelay":"0.1",
+}
+}

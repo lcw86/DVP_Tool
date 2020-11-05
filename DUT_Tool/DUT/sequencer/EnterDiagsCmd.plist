@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>1_XAVIER_CMD</key>
+	<dict>
+		<key>command</key>
+		<string>[123]change tx source voltage(1,5000,3500,PP_HVE);[123]io set(1,bit388=1);[123]dac set(a,4200);[123]io set(4,bit33=0,bit26=1,bit104=0,bit103=1);[123]io set(5,bit64=1,bit66=0,bit55=0,bit65=0,bit54=0);delay 0.01;[123]io set(2,bit386=1,bit63=1);[123]dac set(d,944)</string>
+	</dict>
+	<key>2_Dock_Config</key>
+	<dict>
+		<key>command</key>
+		<string>restart_dc_manager-pl;delay 0.1;disable_dc;delay 0.1;swd_clk_freq-5000000;swd_mode-1;delay 0.1;enable_dc;delay 1</string>
+	</dict>
+	<key>3_XAVIER_CMD</key>
+	<dict>
+		<key>command</key>
+		<string>[123]io set(2,bit49=0,bit50=1)</string>
+	</dict>
+	<key>4_Dock_Config</key>
+	<dict>
+		<key>command</key>
+		<string>restart_dc_manager-pl;delay 1;disable_advdm;delay 1</string>
+	</dict>
+	<key>5_XAVIER_CMD</key>
+	<dict>
+		<key>command</key>
+		<string>[123]io set(1,bit50=0);delay 1;[123]io set(2,bit49=0,bit50=1)</string>
+	</dict>
+	<key>6_Dock_Config</key>
+	<dict>
+		<key>command</key>
+		<string>enable_advdm</string>
+	</dict>
+	<key>DUT_CMD</key>
+	<dict>
+		<key>command</key>
+		<string>diags</string>
+	</dict>
+</dict>
+</plist>
